@@ -44,16 +44,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        guard let url = URLContexts.first?.url,
-              let components = URLComponents(string: url.absoluteString),
-              let scheme = components.scheme else {
-                  return
-              }
-        if scheme == "fluctdemoapp" {
-            window?.rootViewController?.performSegue(withIdentifier: "show_landing_page", sender: window?.rootViewController)
-        }
-    }
 }
 
