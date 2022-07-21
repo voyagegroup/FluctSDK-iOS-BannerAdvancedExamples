@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         
         // Viewの生成
         let adView = FSSAdView(
-            groupId: "1000146485",
-            unitId: "1000242371",
+            groupId: "1000149547",
+            unitId: "1000245601",
             size: CGSize(width: width, height: height)
         )
         adView.backgroundColor = UIColor.blue
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         let targeting = FSSAdRequestTargeting()
         
         //ユーザーのIDを設定してください
-        targeting.publisherProvidedID = "ppid_1"
+        targeting.publisherProvidedID = "c6c506f327740abe750e05cd8d0dc22414d173c43814409c70e722ef2d124806360aaf3146c63226a4e2c862ebdd11b83d37b7b6e144ab4619bca8a0b22d054e"
         
         // 広告の読み込み
         // addSubviewした後にloadAd()を実行してください
