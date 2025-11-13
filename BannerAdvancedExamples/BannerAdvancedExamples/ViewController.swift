@@ -38,15 +38,9 @@ class ViewController: UIViewController {
         adView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(adView)
         
-        // ターゲティング設定
-        let targeting = FSSAdRequestTargeting()
-        
-        //ユーザーのIDを設定してください
-        targeting.publisherProvidedID = "c6c506f327740abe750e05cd8d0dc22414d173c43814409c70e722ef2d124806360aaf3146c63226a4e2c862ebdd11b83d37b7b6e144ab4619bca8a0b22d054e"
-        
         // 広告の読み込み
         // addSubviewした後にloadAd()を実行してください
-        adView.loadAd(with: targeting)
+        adView.loadAd()
         
         self.adView = adView
         
